@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar img {
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    padding: 100px 15px 15px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 368px;
+    margin-bottom: 15px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.creator-label {
+    margin-top: 10px;
+    font-size: 1.0rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 2px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.3);
+    pointer-events: none;
+    z-index: 9999;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.custom-cursor.on-image {
+    background-color: rgba(0, 123, 255, 0.5);
+    border: 2px solid rgba(0, 123, 255, 0.7);
+    transform: scale(1.5);
+}
