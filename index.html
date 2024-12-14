@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Likes</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,8 +19,9 @@
     </nav>
 
     <div id="top" class="image-container">
+        <!-- Image 1 -->
         <div class="image-wrapper">
-            <img class="gallery-image" src="card_images/Package Delivery Card.png" alt="Image 1">
+            <img class="gallery-image" src="card_images/Package Delivery Card.png" alt="Image 1" data-image-id="image-1">
             <div class="creator-label">
                 Abhiraj Adhikary
                 <div class="social-icons">
@@ -29,25 +31,31 @@
                     <a href="https://twitter.com/johndoe" target="_blank">
                         <img src="logos/x-logo.png" alt="Twitter">
                     </a>
+                    <a href="https://figma.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Image 2 -->
         <div class="image-wrapper">
-            <img class="gallery-image" src="card_images/Twitter Card.png" alt="Image 2">
+            <img class="gallery-image" src="card_images/Twitter Card.png" alt="Image 2" data-image-id="image-2">
             <div class="creator-label">
                 Abhiraj Adhikary
                 <div class="social-icons">
                     <a href="https://linkedin.com/in/abhirajadhikary06" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
                     </a>
-                    <a href="https://twitter.com/janesmith" target="_blank">
+                    <a href="https://twitter.com/johndoe" target="_blank">
                         <img src="logos/x-logo.png" alt="Twitter">
+                    </a>
+                    <a href="https://figma.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
                     </a>
                 </div>
             </div>
         </div>
-        
-        <!-- Repeat similar structure for other creators -->
     </div>
 
     <div class="custom-cursor"></div>
