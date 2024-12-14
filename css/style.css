@@ -45,18 +45,21 @@ body {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
+    justify-content: space-between; /* Ensure space is evenly distributed */
+    gap: 28px;
     padding: 100px 15px 15px;
+    max-width: 1200px; /* Limit the container's width */
+    margin: 0 auto; /* Center the container */
 }
 
 .image-wrapper {
+    flex: 1 1 calc(33.33% - 24px); /* Allow three cards per row */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 368px;
     margin-bottom: 15px;
 }
+
 
 .gallery-image {
     width: 100%;
